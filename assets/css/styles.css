@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 340px;
+  height: 470px;
+  padding: 20px;
+  background-color: var(--White);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 var(--Gray950);
+
+  .card__figure {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+
+    .figure__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .card__inf {
+    margin-top: 24px;
+
+    .inf__learning {
+      width: max-content;
+      font-weight: 700;
+      font-size: 0.9rem;
+      background-color: var(--Yellow);
+      padding: 6px 10px;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .inf__date {
+      padding: 10px 0 16px;
+      font-size: 0.8rem;
+      color: var(--Gray950 );
+      display: inline-block;
+    }
+
+    .inf__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--Gray950);
+    }
+
+    .inf__text {
+      font-size: 0.9rem;
+      color: var(--Gray500);
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .inf__author {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+
+      .author__img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .author__name {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--Gray950);
+        margin-left: 12px;
+      }
+    }
+  }
+}
