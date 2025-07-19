@@ -78,6 +78,10 @@ body {
       color: var(--Gray950);
     }
 
+    .inf__title:hover {
+      color: var(--Yellow);
+    }    
+
     .inf__text {
       font-size: 0.9rem;
       color: var(--Gray500);
